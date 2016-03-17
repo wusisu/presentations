@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Introduce of Markdown and Reveal.js</title>
+
+  <meta name="description" content="Introduce of Markdown and Reveal.js">
+  <meta name="author" content="wusisu">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="../../reveal.js-3.2.0/css/reveal.css">
+  <link rel="stylesheet" href="../../reveal.js-3.2.0/css/theme/black.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="../../reveal.js-3.2.0/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../../reveal.js-3.2.0/css/print/pdf.css' : '../../reveal.js-3.2.0/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+		<script src="../../reveal.js-3.2.0/lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section id="start">
+        <h1>presentation</h1>
+        <h4><del>Introduce of</del>介绍 Markdown and Reveal.js</h4>
+        <p>
+          <small>Created by <a href="http://wusisu.com">吴思稣</a> / <a href="http://weibo.com/wusisu">@wusisu</a></small>
+        </p>
+      </section>
+
+      <section id="markdown">
+        <section>
+          <h2>Markup || Markdown</h2>
+          <p>
+            Markdown 是一种轻量级标记语言(Markup)。
+          </p>
+        </section>
+        <section>
+          <h2>Markup</h2>
+          <iframe src="https://en.wikipedia.org/wiki/Markup_language" width="1024" height="600"></iframe>
+        </section>
+        <section>
+          <h2>Markdown</h2>
+          <iframe src="https://en.wikipedia.org/wiki/Markdown" width="1024" height="600"></iframe>
+        </section>
+      </section>
+
+      <section id="benefit-of-markdown">
+        <section data-markdown>
+          <script type="text/template">
+            ## Markdown 的优点
+            - 忽略样式，专注写作
+            - Markdown 的标记语法有极好的可读性。
+            - 纯文本，所以兼容性极强，可以被git跟踪。
+            - 格式转换方便，Markdown 的文本你可以轻松转换为 html、电子书等。
+            -------
+
+            ```
+            ## Markdown 的优点
+            - 忽略样式，专注写作
+            - Markdown 的标记语法有极好的可读性。
+            - 纯文本，所以兼容性极强，可以被git跟踪。
+            - 格式转换方便，Markdown 的文本你可以轻松转换为 html、电子书等。
+            ```
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 可读性
+
+            种类  | Markup | Markdown
+            ------|--------|-----------
+            举例   | html   |  markdown
+            可读性 |  中     |  高
+
+            --------
+            ```
+            ## 可读性
+
+            种类  | Markup | Markdown
+            ------|--------|-----------
+            举例   | html   |  markdown
+            可读性 |  中     |  高
+            ```
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ![](http://apple4us.com/wordpress/wp-content/uploads/2012/02/markdown_demo.png)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ```
+            ![](http://apple4us.com/wordpress/wp-content/uploads/2012/02/markdown_demo.png)
+            ```
+          </script>
+        </section>
+        <section>
+            <a target="_blank" href="http://www.jianshu.com/p/q81RER">献给写作者的 Markdown 新手指南</a>
+        </section>
+      </section>
+
+      <section id="base-on-textile">
+        <section>
+          <h2>基于文本</h2>
+          <p>
+            <span class="fragment">
+              Linux是基于文本的。
+            </span>
+            <br>
+            <span class="fragment">
+              看linux的<a target="_blank" href="http://linuxtools-rst.readthedocs.org/zh_CN/latest/base/03_text_processing.html">众多字符串处理工具。</a>
+            </span>
+          </p>
+          <p>
+            <span class="fragment">Linux开发的Git也是基于文本的。</span>
+            <img class="fragment" src="http://image.beekka.com/blog/201208/bg2012082901.png" alt="" />
+          </p>
+        </section>
+        <section>
+          <h2>可跟踪的创作</h2>
+          <p>
+            当git和markdown结合在一起...
+            写作就变成可 <a href="https://github.com/vuejs/vue/commits/master/README.md">追踪</a>的了
+          </p>
+        </section>
+      </section>
+
+      <section id="use-anywhere">
+        <section>
+          <h2>格式转换方便</h2>
+          <p>
+            于是markdown已经被用在了各种地方。
+          </p>
+          <ul>
+            <li>项目(文档)</li>
+            <li>代码(注释)</li>
+            <li>网站
+              <ul class="fragment">
+                <li><a target="_blank" href="https://github.com/vuejs/vue">github</a></li>
+                <li><a target="_blank" href="https://coding.net/u/1ta/p/lims/task/178985">coding.net</a></li>
+                <li><a target="_blank" href="http://www.jianshu.com/">简书</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section id="make-better-writting">
+        <section>
+          <h2><a target="_blank" href="http://www.jianshu.com/p/17fdcf17bbb4">Markdown：让书写更美好</a></h2>
+        </section>
+      </section>
+
+      <section id="reveal-js">
+        <section>
+          <h2><a target="_blank" href="https://github.com/hakimel/reveal.js/">Reveal.js</a></h2>
+          <q cite="https://github.com/hakimel/reveal.js/">A framework for easily creating beautiful presentations using HTML.</q>
+        </section>
+      </section>
+
+      <section style="text-align: left;">
+        <h1>THE END</h1>
+        <p>
+          <!-- - <a href="http://slides.com">Try the online editor</a>
+          <br>  -->
+          - <a href="https://github.com/wusisu/presentations">Source of this presentation</a>
+        </p>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="../../reveal.js-3.2.0/lib/js/head.min.js"></script>
+  <script src="../../reveal.js-3.2.0/js/reveal.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'zoom', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [{
+        src: '../../reveal.js-3.2.0/lib/js/classList.js',
+        condition: function() {
+          return !document.body.classList;
+        }
+      }, {
+        src: '../../reveal.js-3.2.0/plugin/markdown/marked.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: '../../reveal.js-3.2.0/plugin/markdown/markdown.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: '../../reveal.js-3.2.0/plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: '../../reveal.js-3.2.0/plugin/zoom-js/zoom.js',
+        async: true
+      }, {
+        src: '../../reveal.js-3.2.0/plugin/notes/notes.js',
+        async: true
+      }]
+    });
+  </script>
+
+</body>
+
+</html>
