@@ -27,6 +27,9 @@
                 case 4:
                     Reveal.left();
                     break;
+                cass 0:
+                    location.href = location.href.split('#')[0]
+                    break;
                 default:
             }
         }

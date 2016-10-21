@@ -48,6 +48,9 @@
         <button class="ui left labeled icon button secondary" id="up"><i class="up arrow circle icon"></i> up</button>
         <button class="ui left labeled icon button secondary" id="down"><i class="down arrow circle icon"></i> down</button>
     </div>
+    <div class="">
+        <button id="gotomain" class="">go to home</button>
+    </div>
     <!-- <button id="clean">clean</button> -->
     <script type="text/javascript">
         window.onload = function() {
@@ -72,6 +75,12 @@
             $('#left').on('click', function() {
                 changeData(4);
             });
+            $('#gotomain').on('click', function() {
+                var v = confirm('go to home page')
+                if (v){
+                    changeData(0);
+                }
+            })
             // 设置向野狗更新数据
             function changeData(status) {
                 var time = String((new Date()).getTime()).slice(0,11);
